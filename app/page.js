@@ -4,11 +4,13 @@ import KanbanTable from "@/components/KanbanTable";
 import KanbanList from "@/components/KanbanList";
 
 export default function Home() {
+  
   const [activeTab, setActiveTab] = useState("mainTable");
   const tabs = [
     { id: "mainTable", label: "Main Table" },
     { id: "kanban", label: "Kanban" },
   ];
+
   return (
     <main className="min-h-screen w-full bg-[#010409] text-white px-4 py-10">
       <div className="max-w-6xl mx-auto">
